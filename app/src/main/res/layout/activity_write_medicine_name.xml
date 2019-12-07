@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Activites.WriteMedicineName">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Right_Frames_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Left_Frames_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02" />
+
+
+    <!-- TODO: Frame Layout -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/layout_round"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/DisplayMedicineListView"
+        app:layout_constraintEnd_toEndOf="@+id/Right_Frames_guideline"
+        app:layout_constraintStart_toStartOf="@+id/Left_Frames_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- TODO: Upload the Medicine -->
+
+    <EditText
+        android:id="@+id/messageEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Enter Drug"
+        app:layout_constraintBottom_toTopOf="@+id/addAnotherOrder"
+        app:layout_constraintEnd_toEndOf="@id/Right_Upload_Medicine_Layout_guideline"
+        app:layout_constraintStart_toStartOf="@id/Left_Upload_Medicine_Layout_guideline"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Right_Upload_Medicine_Layout_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.82" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Left_Upload_Medicine_Layout_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+
+    <!-- TODO: Add Another Order Button -->
+
+    <Button
+        android:id="@+id/addAnotherOrder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_round"
+        android:text="Add Another Order"
+        android:textColor="@color/Third"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="@id/Right_Upload_Medicine_Layout_guideline"
+        app:layout_constraintStart_toStartOf="@id/Left_Upload_Medicine_Layout_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/messageEditText" />
+
+
+    <!-- TODO: Number Of Medicine -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="@id/Right_Number_Of_Medicine_guideline"
+        app:layout_constraintStart_toStartOf="@id/Left_Number_Of_Medicine_guideline"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/upButton"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:background="@color/Third"
+            android:src="@mipmap/up" />
+
+        <TextView
+            android:id="@+id/quantityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="25dp" />
+
+        <ImageButton
+            android:id="@+id/downButton"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:background="@color/Third"
+            android:src="@mipmap/down" />
+
+
+    </LinearLayout>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Left_Number_Of_Medicine_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Right_Number_Of_Medicine_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <!-- TODO: Display Medicine -->
+
+    <ListView
+        android:id="@+id/DisplayMedicineListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_round"
+        android:divider="@android:color/transparent"
+        android:padding="10dp"
+        android:transcriptMode="alwaysScroll"
+        app:layout_constraintBottom_toTopOf="@+id/ToNextButton"
+        app:layout_constraintEnd_toEndOf="@id/Right_Frames_guideline"
+        app:layout_constraintStart_toStartOf="@id/Left_Frames_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:listitem="@layout/item_orders" />
+
+
+
+    <!-- TODO: To Next Button -->
+
+    <Button
+        android:id="@+id/ToNextButton"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_round"
+        android:drawableRight="@mipmap/arrow"
+        android:padding="8dp"
+        android:text="Next"
+        android:textColor="@android:color/background_light"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/Right_Number_Of_Medicine_guideline"
+        app:layout_constraintStart_toStartOf="@id/Left_Display_Medicine_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/DisplayMedicineListView" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Left_Display_Medicine_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.58" />
+
+
+</android.support.constraint.ConstraintLayout>

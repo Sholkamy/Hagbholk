@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.example.sholkamy.pharmalivary.Activites.Signup">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/Right_All_EditView_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/Left_All_EditView_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/Right_Join-Button_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.16" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/Left_Join-Button_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.84" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/Top_Profile_CircleImageView_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/Bottom_Profile_CircleImageView_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/Top_Name_EditView_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.23" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/Bottom_Name_EditView_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/Top_Email_EditView_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.31" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/Bottom_Email_EditView_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.38" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/Top_Pass_EditView_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.39" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/Bottom_Pass_EditView_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.46" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/Top_RePass_EditView_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.47" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/Bottom_RePass_EditView_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.54" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/Top_Join_ButtonView_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.58" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/Bottom_Join_ButtonView_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.66" />
+
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@mipmap/user"
+            app:layout_constraintTop_toBottomOf="@id/Top_Profile_CircleImageView_guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/Bottom_Profile_CircleImageView_guideline"/>
+
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="10dp"
+            android:hint="Full Name"
+            android:inputType="textAutoCorrect"
+            android:maxLines="1"
+            android:padding="9dp"
+            android:paddingLeft="10dp"
+            app:layout_constraintTop_toTopOf="@id/Top_Name_EditView_guideline"
+            app:layout_constraintEnd_toEndOf="@id/Left_All_EditView_guideline"
+            app:layout_constraintStart_toStartOf="@id/Right_All_EditView_guideline"
+            app:layout_constraintBottom_toTopOf="@+id/Bottom_Name_EditView_guideline"/>
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/at"
+            android:drawablePadding="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="9dp"
+            android:paddingLeft="10dp"
+            app:layout_constraintTop_toTopOf="@id/Top_Email_EditView_guideline"
+            app:layout_constraintEnd_toEndOf="@id/Left_All_EditView_guideline"
+            app:layout_constraintStart_toStartOf="@id/Right_All_EditView_guideline"
+            app:layout_constraintBottom_toTopOf="@+id/Bottom_Email_EditView_guideline"/>
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="10dp"
+            android:focusableInTouchMode="true"
+            android:hint="password"
+            android:imeActionId="@+id/login"
+            tools:ignore="InvalidImeActionId"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="9dp"
+            android:paddingLeft="10dp"
+            app:layout_constraintTop_toTopOf="@id/Top_Pass_EditView_guideline"
+            app:layout_constraintEnd_toEndOf="@id/Left_All_EditView_guideline"
+            app:layout_constraintStart_toStartOf="@id/Right_All_EditView_guideline"
+            app:layout_constraintBottom_toTopOf="@+id/Bottom_Pass_EditView_guideline"/>
+
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="10dp"
+            android:focusableInTouchMode="true"
+            android:hint="Confirm password"
+            android:imeActionId="@+id/login"
+            tools:ignore="InvalidImeActionId"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="9dp"
+            app:layout_constraintTop_toTopOf="@id/Top_RePass_EditView_guideline"
+            app:layout_constraintEnd_toEndOf="@id/Left_All_EditView_guideline"
+            app:layout_constraintStart_toStartOf="@id/Right_All_EditView_guideline"
+            app:layout_constraintBottom_toTopOf="@+id/Bottom_RePass_EditView_guideline"/>
+
+
+        <Button
+            android:id="@+id/sign_up_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_round"
+            android:text="Join"
+            android:textColor="@android:color/background_light"
+            android:textSize="16dp"
+            app:layout_constraintTop_toTopOf="@id/Top_Join_ButtonView_guideline"
+            app:layout_constraintEnd_toEndOf="@id/Left_Join-Button_guideline"
+            app:layout_constraintStart_toStartOf="@id/Right_Join-Button_guideline"
+            app:layout_constraintBottom_toTopOf="@+id/Bottom_Join_ButtonView_guideline"/>
+
+
+        <ProgressBar
+            android:id="@+id/JoinProgress"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@id/Top_Join_ButtonView_guideline"
+            app:layout_constraintEnd_toEndOf="@id/Left_Join-Button_guideline"
+            app:layout_constraintStart_toStartOf="@id/Right_Join-Button_guideline"
+            app:layout_constraintBottom_toTopOf="@+id/Bottom_Join_ButtonView_guideline"/>
+
+
+    </android.support.constraint.ConstraintLayout>

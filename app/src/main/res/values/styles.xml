@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#0F4066</item>
+        <item name="colorPrimaryDark">@color/Fourth</item>
+        <item name="colorAccent">@color/Fourth</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppCroppingTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#0F4066</item>
+        <item name="colorPrimaryDark">#145385</item>
+        <item name="colorAccent">@color/Fourth</item>
+    </style>
+
+
+    <!-- Search fragment -->
+    <style name="StartApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#0F4066</item>
+        <item name="colorPrimaryDark">#A0A0A0</item>
+        <item name="colorAccent">@color/Fourth</item>
+    </style>
+
+
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/Fourth</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Add to phone Auth -->
+    <!-- Activity with no Title -->
+    <style name="ThemeOverlay.MyNoTitleActivity" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!-- Dark Buttons -->
+    <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorButtonNormal">#F2A2A5</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="FacebookLoginButton">
+
+    </style>
+
+
+
+</resources>

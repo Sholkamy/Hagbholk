@@ -1,0 +1,455 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sholkamy.pharmalivary.Fragment.SettingFragment">
+
+
+
+    <!-- Profile Layout -->
+
+    <LinearLayout
+        android:id="@+id/Profile_Layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/profile_gradient"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_Profile_Layout_guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_Profile_Layout_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.335" />
+
+
+    <!-- Profile CircleImageView -->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@mipmap/user"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_Image_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/Right_Image_guideline"
+        app:layout_constraintStart_toStartOf="@+id/Left_Image_guideline"
+        app:layout_constraintTop_toTopOf="@+id/Top_Image_guideline" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Left_Image_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Right_Image_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_Image_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_Image_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+
+    <!-- Edit Profile Button -->
+
+    <ImageButton
+        android:id="@+id/Edit_Profile_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/edit_profile1"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_Edit_Image_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/Right_Edit_Image_guideline"
+        app:layout_constraintStart_toStartOf="@+id/Left_Edit_Image_guideline"
+        app:layout_constraintTop_toTopOf="@+id/Top_Image_guideline"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_Edit_Image_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Right_Edit_Image_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Left_Edit_Image_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.83" />
+
+
+    <!-- Name Text View -->
+
+    <TextView
+        android:id="@+id/NameTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="User Name"
+        android:gravity="center"
+        android:autoSizeTextType="uniform"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_Name_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/Left_Edit_Image_guideline"
+        app:layout_constraintStart_toStartOf="@+id/Left_Name_Image_guideline"
+        app:layout_constraintTop_toTopOf="@+id/Top_Name_guideline"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_Name_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.19" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_Name_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Left_Name_Image_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.17" />
+
+
+    <!-- Order Analysiz Layout -->
+
+    <LinearLayout
+        android:id="@+id/Order_Analysiz_Layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:background="@drawable/layout_information"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_Order_Analysiz_guideline"
+        app:layout_constraintTop_toTopOf="@id/Top_Order_Analysiz_guideline"
+        app:layout_constraintEnd_toEndOf="@id/Right_Order_Analysiz_guideline"
+        app:layout_constraintStart_toStartOf="@id/Left_Order_Analysiz_guideline"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="All Orders"
+                android:textColor="@color/Fourth"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:text="0"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="0.1dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/Fourth" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="current request"
+                android:textColor="@color/Fourth"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:text="0"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_Order_Analysiz_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_Order_Analysiz_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Left_Order_Analysiz_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Right_Order_Analysiz_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85"/>
+
+
+
+    <!-- Email Layout -->
+
+    <LinearLayout
+        android:id="@+id/Email_Layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_Email_Layout_guideline"
+        app:layout_constraintEnd_toEndOf="@id/Right_Edit_Image_guideline"
+        app:layout_constraintStart_toStartOf="@id/Left_Order_Analysiz_guideline"
+        app:layout_constraintTop_toTopOf="@id/Top_Email_Layout_guideline">
+
+        <ImageView
+            android:id="@+id/EmailImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/email" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:gravity="center|start"
+            android:text="User Email" />
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_Email_Layout_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_Email_Layout_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+
+    <!-- Phone Layout -->
+
+    <LinearLayout
+        android:id="@+id/Phone_Layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_Phone_Layout_guideline"
+        app:layout_constraintEnd_toEndOf="@id/Right_Edit_Image_guideline"
+        app:layout_constraintStart_toStartOf="@id/Left_Order_Analysiz_guideline"
+        app:layout_constraintTop_toTopOf="@id/Top_Phone_Layout_guideline">
+
+        <ImageView
+            android:id="@+id/PhoneImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/agenda" />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:gravity="center|start"
+            android:text="User Phone" />
+
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_Phone_Layout_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_Phone_Layout_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6"/>
+
+
+    <!-- Country Layout -->
+
+    <LinearLayout
+        android:id="@+id/Country_Layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_Country_Layout_guideline"
+        app:layout_constraintEnd_toEndOf="@id/Right_Edit_Image_guideline"
+        app:layout_constraintStart_toStartOf="@id/Left_Order_Analysiz_guideline"
+        app:layout_constraintTop_toTopOf="@id/Top_Country_Layout_guideline">
+
+        <ImageView
+            android:id="@+id/CountryImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/house" />
+
+        <TextView
+            android:id="@+id/tvCountry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:gravity="center|start"
+            android:text="User Country" />
+
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_Country_Layout_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_Country_Layout_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68"/>
+
+
+    <!-- Logout Layout -->
+
+    <LinearLayout
+        android:id="@+id/logout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@drawable/layout_information"
+        android:paddingTop="6dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_Logout_Layout_guideline"
+        app:layout_constraintEnd_toEndOf="@id/Right_Logout_Layout_guideline"
+        app:layout_constraintStart_toStartOf="@id/Left_Logout_Layout_guideline"
+        app:layout_constraintTop_toTopOf="@id/Top_Logout_Layout_guideline">
+
+        <ImageView
+            android:id="@+id/logoutImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            android:src="@mipmap/exit" />
+
+        <TextView
+            android:id="@+id/logoutText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center|start"
+            android:paddingLeft="20dp"
+            android:text="Logout"
+            android:textColor="@android:color/background_dark"/>
+
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_Logout_Layout_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_Logout_Layout_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Left_Logout_Layout_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Right_Logout_Layout_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+
+</android.support.constraint.ConstraintLayout>

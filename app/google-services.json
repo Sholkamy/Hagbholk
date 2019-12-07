@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "905476085561",
+    "firebase_url": "https://hagbholk-833a6.firebaseio.com",
+    "project_id": "hagbholk-833a6",
+    "storage_bucket": "hagbholk-833a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905476085561:android:02d27586eb56b37ef17ae8",
+        "android_client_info": {
+          "package_name": "com.example.sholkamy.pharmalivary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905476085561-ni4cru2r950lkqgh3udsm2do2rppp6ln.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sholkamy.pharmalivary",
+            "certificate_hash": "d9185ab170ff5144c7029ecc607b39e2541b5593"
+          }
+        },
+        {
+          "client_id": "905476085561-24g9nt1k3amrq9tlqv4u39no1dih8uu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiA6rez3U46decvBU2WRZpUVPOwfNaIRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905476085561-24g9nt1k3amrq9tlqv4u39no1dih8uu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

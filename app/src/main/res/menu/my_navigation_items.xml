@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/action_home"
+        android:icon="@drawable/home"
+        android:title=""
+        />
+
+
+
+
+    <item android:id="@+id/action_news"
+        android:icon="@drawable/blogging"
+        android:checked="true"
+        android:title=""
+        />
+
+
+
+    <!--
+    <item android:id="@+id/action_prescription"
+        android:icon="@drawable/medicalfile"
+        android:title="" />
+    -->
+
+
+
+    <item android:id="@+id/action_settings"
+        android:icon="@drawable/menu"
+        android:title="" />
+
+</menu>

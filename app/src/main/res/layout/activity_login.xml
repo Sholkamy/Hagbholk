@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@drawable/gradient"
+        tools:context=".Activites.Login">
+
+
+    <!-- Logo Image -->
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_Logo_Image_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_Logo_Image_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Left_Logo_Image_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Right_Logo_Image_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/imageView"
+        app:srcCompat="@mipmap/logo"
+        app:layout_constraintBottom_toBottomOf="@+id/Top_Logo_Image_guideline"
+        app:layout_constraintLeft_toLeftOf="@id/Left_Logo_Image_guideline"
+        app:layout_constraintRight_toRightOf="@id/Right_Logo_Image_guideline"
+        app:layout_constraintTop_toTopOf="@+id/Bottom_Logo_Image_guideline"/>
+
+
+    <!-- Email EditText -->
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_Email_EditText_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_Email_EditText_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Left_Email_EditText_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Right_Email_EditText_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/edit_round"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Top_Email_EditText_guideline"
+        app:layout_constraintLeft_toLeftOf="@id/Left_Email_EditText_guideline"
+        app:layout_constraintRight_toRightOf="@id/Right_Email_EditText_guideline"
+        app:layout_constraintTop_toTopOf="@+id/Bottom_Email_EditText_guideline"/>
+
+
+    <!-- Pass EditText -->
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_Pass_EditText_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_Pass_EditText_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Left_Pass_EditText_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Right_Pass_EditText_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/edit_round"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Bottom_Pass_EditText_guideline"
+        app:layout_constraintLeft_toLeftOf="@id/Left_Pass_EditText_guideline"
+        app:layout_constraintRight_toRightOf="@id/Right_Pass_EditText_guideline"
+        app:layout_constraintTop_toTopOf="@+id/Top_Pass_EditText_guideline"/>
+
+
+    <!-- Login Btn -->
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_Login_Btn_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_Login_Btn_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Left_Login_Btn_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Right_Login_Btn_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/btn_round"
+        android:fontFamily="@string/com_facebook_internet_permission_error_title"
+        android:text="@string/Login"
+        android:textColor="@android:color/background_light"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Bottom_Login_Btn_guideline"
+        app:layout_constraintLeft_toLeftOf="@id/Left_Login_Btn_guideline"
+        app:layout_constraintRight_toRightOf="@id/Right_Login_Btn_guideline"
+        app:layout_constraintTop_toTopOf="@+id/Top_Login_Btn_guideline"/>
+
+
+    <!-- Reset Password Text -->
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_reset_password_Text_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_reset_password_Text_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <TextView
+        android:id="@+id/btn_reset_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="I forget my password.."
+        android:textColor="#3E76B4"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Top_reset_password_Text_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bottom_reset_password_Text_guideline" />
+
+
+    <!-- OR Text -->
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_OR_Text_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_OR_Text_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_OR_Text_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Top_OR_Text_guideline">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            tools:ignore="Suspicious0dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="OR"
+            android:textColor="@android:color/background_dark"
+            android:autoSizeTextType="uniform"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            tools:ignore="Suspicious0dp" />
+
+    </LinearLayout>
+
+
+    <!-- Fb Btn -->
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_Fb_Btn_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.56" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_Fb_Btn__guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.62" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Left_Fb_Btn_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Right_Fb_Btn_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_Fb_Btn__guideline"
+        app:layout_constraintLeft_toLeftOf="@id/Left_Fb_Btn_guideline"
+        app:layout_constraintRight_toRightOf="@id/Right_Fb_Btn_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/Top_Fb_Btn_guideline"/>
+
+
+    <!-- Google Btn -->
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_google_Btn_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_google_Btn__guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btn_google"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_google_Btn__guideline"
+        app:layout_constraintLeft_toLeftOf="@id/Left_Fb_Btn_guideline"
+        app:layout_constraintRight_toRightOf="@id/Right_Fb_Btn_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/Top_google_Btn_guideline"/>
+
+
+    <!-- SignUp Text -->
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_SignUp_Text_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_SignUp_Text_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_SignUp_Text_guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Top_SignUp_Text_guideline">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Don't have an account?"
+            android:textColor="@android:color/background_dark"
+            android:autoSizeTextType="uniform"/>
+
+        <TextView
+            android:id="@+id/btn_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" Sign up."
+            android:textAllCaps="true"
+            android:textColor="#3E76B4"
+            android:autoSizeTextType="uniform"
+            android:textStyle="bold" />
+    </LinearLayout>
+    </android.support.constraint.ConstraintLayout>

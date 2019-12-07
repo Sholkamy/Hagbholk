@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Guidelines -->
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Right_All_Button_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Right_Center_Button_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Left_Center_Button_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.51" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Left_All_Button_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_First_Buttons_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_First_Buttons_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.24" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_Second_Buttons_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_Second_Buttons_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_Third_Buttons_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Bottom_Third_Buttons_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Top_Adds_View_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+    <!-- Search a Medicine -->
+
+    <LinearLayout
+        android:id="@+id/SearchAMedicine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/main_layout"
+        app:layout_constraintTop_toTopOf="@id/Top_First_Buttons_guideline"
+        app:layout_constraintEnd_toEndOf="@id/Right_All_Button_guideline"
+        app:layout_constraintStart_toStartOf="@id/Left_Center_Button_guideline"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_First_Buttons_guideline">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:padding="6dp"
+            android:src="@drawable/search"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#FFD400"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Search a Medicine"
+            android:autoSizeTextType="uniform" />
+
+    </LinearLayout>
+
+
+    <!-- Show a Prescription -->
+
+    <LinearLayout
+        android:id="@+id/ShowAPrescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/main_layout"
+        app:layout_constraintTop_toTopOf="@id/Top_First_Buttons_guideline"
+        app:layout_constraintEnd_toEndOf="@id/Right_Center_Button_guideline"
+        app:layout_constraintStart_toStartOf="@id/Left_All_Button_guideline"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_First_Buttons_guideline">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:padding="6dp"
+            android:src="@drawable/prescription"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#FFD400"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Last Prescription"
+            android:autoSizeTextType="uniform"/>
+
+    </LinearLayout>
+
+
+    <!-- Write a Medicine Name -->
+
+    <LinearLayout
+        android:id="@+id/WriteAMedicineName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/main_layout"
+        app:layout_constraintTop_toTopOf="@id/Top_Second_Buttons_guideline"
+        app:layout_constraintEnd_toEndOf="@id/Right_All_Button_guideline"
+        app:layout_constraintStart_toStartOf="@id/Left_Center_Button_guideline"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_Second_Buttons_guideline">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:padding="6dp"
+            android:src="@drawable/medication"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#FFD400"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Medicine Name"
+            android:autoSizeTextType="uniform" />
+
+    </LinearLayout>
+
+
+    <!-- View a Profile -->
+
+    <LinearLayout
+        android:id="@+id/ViewAProfile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/main_layout"
+        app:layout_constraintTop_toTopOf="@id/Top_Second_Buttons_guideline"
+        app:layout_constraintEnd_toEndOf="@id/Right_Center_Button_guideline"
+        app:layout_constraintStart_toStartOf="@id/Left_All_Button_guideline"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_Second_Buttons_guideline">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:padding="6dp"
+            android:src="@drawable/support"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#FFD400"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Edit Profile"
+            android:autoSizeTextType="uniform"/>
+
+    </LinearLayout>
+
+
+    <!-- Prescription Photo -->
+
+    <LinearLayout
+        android:id="@+id/PrescriptionPhoto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@drawable/main_layout"
+        app:layout_constraintTop_toTopOf="@id/Top_Third_Buttons_guideline"
+        app:layout_constraintEnd_toEndOf="@id/Right_All_Button_guideline"
+        app:layout_constraintStart_toStartOf="@id/Left_All_Button_guideline"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_Third_Buttons_guideline">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/camera"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:textColor="#FFD400"
+                android:gravity="start|center"
+                android:padding="4dp"
+                android:text="Photo of Prescription"
+                android:autoSizeTextType="uniform" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <!-- View Adds -->
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/logoezaby"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toBottomOf="@id/Top_Adds_View_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
